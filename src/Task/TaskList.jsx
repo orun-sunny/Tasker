@@ -1,4 +1,4 @@
-// import { FaStar } from "react-icons/fa";
+import { FaStar } from "react-icons/fa";
 
 export default function TaskList({ tasks, onEdit, onDelete, onFav }) {
   return (
@@ -37,11 +37,11 @@ export default function TaskList({ tasks, onEdit, onDelete, onFav }) {
             >
               <td>
                 <button onClick={() => onFav(task.id)}>
-                  {/* {task.isFavorite ? (
+                  {task.isFavorite ? (
                     <FaStar color="yellow" />
                   ) : (
                     <FaStar color="gray" />
-                  )} */}
+                  )}
                 </button>
               </td>
               <td>{task.title}</td>
