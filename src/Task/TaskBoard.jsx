@@ -3,6 +3,7 @@ import SearchTask from "./SearchTask";
 import TaskActions from "./TaskActions";
 import TaskList from "./TaskList";
 import NoTasksFound from "./NoTasksFound";
+import AddTaskModal from "./AddTaskModal";
 
 export default function TaskBoard() {
   const defaultTask = {
@@ -95,13 +96,13 @@ export default function TaskBoard() {
 
   return (
     <section className="mb-20" id="tasks">
-      {/* {showAddModal && (
+      {showAddModal && (
         <AddTaskModal
           onSave={handleAddEditTask}
           onCloseClick={handleCloseClick}
           taskToUpdate={taskToUpdate}
         />
-      )} */}
+      )}
       <div className="container">
         <div className="p-2 flex justify-end">
           <SearchTask onSearch={handleSearch} />
